@@ -1,13 +1,16 @@
 :root {
     --brand-color: #4D5AE5;
-    --main-text: #2E2F42;
-    --descr-text: #434455;
-    --btn-bgrd: #F4F4FD;
+    --main-text-color: #2E2F42;
+    --descr-text-color: #434455;
+    --bgrd-color: #F4F4FD;
+    --light-text-color: #ffffff;
+    --btn-hover-color: #404BBF;
+    --footer-text-color: #E7E9FC;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--main-text);
+    color: var(--main-text-color);
 }
 
 /* index.html */
@@ -34,7 +37,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
-    color: var(--main-text);        
+    color: var(--main-text-color);        
 }
 
 .nav-link:hover,
@@ -46,7 +49,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5px;
-    color: var(--descr-text);
+    color: var(--descr-text-color);
     text-decoration: none;
 }
 
@@ -59,19 +62,22 @@ body {
 
 /* SECTION Effective Solutions for Your Business  */
 
+.hero {
+    background-color: var(--main-text-color);
+}
+
 .hero-title {
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
-    color: #FFFFFF;
-    background-color: var(--main-text); /* Для наглядності, щоб було видно текст*/
+    color: var(--light-text-color);
 }
 
 .hero-btn {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.19;
-    color: #FFFFFF;
+    color: var(--light-text-color);
     background-color: var(--brand-color);
     border: none;
     cursor: pointer;
@@ -79,7 +85,7 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: #404BBF;
+    background-color: var(--btn-hover-color);
 }
 
 /* SECTION Our principles */
@@ -114,6 +120,10 @@ body {
 
 /* SECTION Our Team */
 
+.team {
+    background-color: var(--bgrd-color);
+}
+
 .team-title {
     font-weight: 600;
     font-size: 36px;
@@ -122,6 +132,10 @@ body {
 
 .team-list {
     list-style-type: none;
+}
+
+.team-card {
+    background-color: var(--light-text-color);
 }
 
 .team-subtitle {
@@ -139,7 +153,7 @@ body {
 /* FOOTER */
 
 footer {
-    background-color: var(--main-text); /* Для наглядності, щоб було видно текст*/
+    background-color: var(--main-text-color);
 }
 
 .footer-logo {
@@ -148,14 +162,14 @@ footer {
     font-size: 18px;
     line-height: 1.33;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--light-text-color);
 }
 
 .footer-desc {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #E7E9FC;
+    color: var(--footer-text-color);
 }
 
 /* portfolio */
@@ -166,19 +180,36 @@ footer {
     list-style-type: none;
 }
 
+.btn-active {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--light-text-color);
+    background-color: var(--brand-color);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-active:hover,
+.btn-active:focus {
+    background-color: var(--btn-hover-color);
+}
+
 .filter-btn {
+    font-family: inherit;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     color: var(--brand-color);
-    background-color: #F4F4FD;
+    background-color: var(--bgrd-color);
     border: none;
     cursor: pointer;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
-    color: #ffffff;
+    color: var(--light-text-color);
     background-color: var(--brand-color);
 }
 
@@ -191,24 +222,18 @@ footer {
 }
 
 .port-title {
+    font-family: inherit;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
-    color: var(--main-text);
+    color: var(--main-text-color);
     
 }
 
 .port-desc {
+    font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--descr-text);
-}
-
-.port-hover {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #F4F4FD;
-    background-color: var(--brand-color); /* Для наглядності, щоб було видно текст*/
+    color: var(--descr-text-color);
 }
