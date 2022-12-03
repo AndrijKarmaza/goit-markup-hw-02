@@ -1,0 +1,214 @@
+:root {
+    --brand-color: #4D5AE5;
+    --main-text: #2E2F42;
+    --descr-text: #434455;
+    --btn-bgrd: #F4F4FD;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text);
+}
+
+/* index.html */
+
+/* HEADER */
+
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-decoration: none;
+}
+
+.logo-span {
+    color: var(--brand-color);
+}
+
+.header-list {
+    list-style-type: none;
+}
+.nav-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: var(--main-text);        
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--brand-color);
+}
+
+.contact {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5px;
+    color: var(--descr-text);
+    text-decoration: none;
+}
+
+.contact:hover,
+.contact:focus {
+    color: var(--brand-color);
+}
+
+/* MAIN */
+
+/* SECTION Effective Solutions for Your Business  */
+
+.hero-title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    color: #FFFFFF;
+    background-color: var(--main-text); /* Для наглядності, щоб було видно текст*/
+}
+
+.hero-btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.19;
+    color: #FFFFFF;
+    background-color: var(--brand-color);
+    border: none;
+    cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #404BBF;
+}
+
+/* SECTION Our principles */
+
+.prin-list {
+    list-style-type: none;
+}
+
+.prin-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.prin-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--descr-text);
+}
+
+/* SECTION What are we doing */
+
+.work-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+}
+
+.work-list {
+    list-style-type: none;
+}
+
+/* SECTION Our Team */
+
+.team-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11; 
+}
+
+.team-list {
+    list-style-type: none;
+}
+
+.team-subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.team-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--descr-text);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--main-text); /* Для наглядності, щоб було видно текст*/
+}
+
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #E7E9FC;
+}
+
+/* portfolio */
+
+/* MAIN */
+
+.filter {
+    list-style-type: none;
+}
+
+.filter-btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--brand-color);
+    background-color: #F4F4FD;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: #ffffff;
+    background-color: var(--brand-color);
+}
+
+.port-list {
+    list-style-type: none;
+}
+
+.port-link {
+    text-decoration: none;
+}
+
+.port-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--main-text);
+    
+}
+
+.port-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--descr-text);
+}
+
+.port-hover {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #F4F4FD;
+    background-color: var(--brand-color); /* Для наглядності, щоб було видно текст*/
+}
